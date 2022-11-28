@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Healthy Life</title>
+  <link rel="stylesheet" href="https://bootswatch.com/5/lux/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="./script/script.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous" defer></script>
+  <script src="./script/script-home.js" defer></script>
+  <script src="./script/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./home.html">Healthy Life</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarColor01">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="./home.html">Home
+                <span class="visually-hidden">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./menu.html">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about-us.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact-us.html">Contact Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Order</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="./choose-menu.html">Food</a>
+                <a class="dropdown-item" href="./reservation.html">Reservation</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">History</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="history-food.html">Food</a>
+                <a class="dropdown-item" href="history-reservation.html">Reservation</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="content">
+    <div class="slideshow-container">
+      <div class="slides">
+        <div class="slide">
+          <img class="img-slides" src="./asset/banner/banner1.jpg" alt="banner-1">
+        </div>
+        <div class="slide">
+          <img class="img-slides" src="./asset/banner/banner2.jpg" alt="banner-2">
+        </div>
+        <div class="slide">
+          <img class="img-slides" src="./asset/banner/banner3.jpg" alt="banner-3">
+        </div>
+      </div>
+    </div>
+
+    <div class="chef-recommendation">
+      <h2 class="title">Top 3 chef's recommendation</h2>
+      <div class="recommendation-container">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="./asset/recommendation/recommendation1.jpg" alt="Vegan Salad Bowl">
+          <div class="card-body">
+            <h5 class="card-title">Vegan Salad Bowl</h5>
+            <p class="card-text">An easy vegan salad, with beans, radish, pickled cabbage and couscous. Bursting with flavour, it makes a satisfying dinner or lunch on the go.</p>
+            <a href="./order-food.html" class="btn btn-primary">Order</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="./asset/recommendation/recommendation2.jpg" alt="Rainbow Orzo Salad">
+          <div class="card-body">
+            <h5 class="card-title">Rainbow Orzo Salad</h5>
+            <p class="card-text">Diced mango adds a surprising sweet twist to this colorful orzo, red onion, bell pepper, herb, and cucumber salad.</p>
+            <a href="./order-food.html" class="btn btn-primary">Order</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="./asset/recommendation/recommendation3.jpg" alt="Vegan Cobb Salad">
+          <div class="card-body">
+            <h5 class="card-title">Vegan Cobb Salad</h5>
+            <p class="card-text">This plant-based riff on a classic Cobb salad swaps baked tofu for chicken breast and smoky toasted coconut for bacon. A creamy, tangy dressing ties it all together</p>
+            <a href="./order-food.html" class="btn btn-primary">Order</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="video-container">
+    <video class="promotion-video" src="./asset/video/video.mp4" autoplay loop></video>
+  </div>
+
+  <div class="category">
+    <h2 class="title">Category</h2>
+    <div class="category-container">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="./asset/category/food.png" alt="Food">
+        <div class="card-body">
+          <h5 class="card-title">Food</h5>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="./asset/category/drink.png" alt="Drink">
+        <div class="card-body">
+          <h5 class="card-title">Drink</h5>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="./asset/category/dessert.png" alt="Dessert">
+        <div class="card-body">
+          <h5 class="card-title">Dessert</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="navbar navbar-expand-lg navbar-light bg-light">
+    <h3>LB11 - Faustina, Kevin, Kezia, Nicholas</h3>
+  </footer>
+
+</body>
+</html>

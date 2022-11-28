@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://bootswatch.com/5/lux/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="./script/contact-us.js" defer></script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous" defer></script>
+  <title>Healthy Life</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./home.html">Healthy Life</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarColor01">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="./home.html">Home
+                <span class="visually-hidden">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./menu.html">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about-us.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="./contact-us.html">Contact Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Order</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="./choose-menu.html">Food</a>
+                <a class="dropdown-item" href="./reservation.html">Reservation</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">History</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="history-food.html">Food</a>
+                <a class="dropdown-item" href="history-reservation.html">Reservation</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="content">
+    <div class="our-location-container">
+      <h1 class="contact-us-title">Our Location</h1>
+      <div class="map-container">
+
+        <img class="map-img" usemap="#location-map" src="./asset/contact-us/map.png" alt="map">
+        <map name="location-map">
+          <area shape="rect" coords="409, 221, 435, 240" href="./home.html" alt="location">
+        </map>
+      </div>
+      <p class="description">Find us at BINUS University Alam Sutera Main Campus. Open daily from 09.00 AM - 17.00 PM!
+      </p>
+    </div>
+    <div class="our-contact-container">
+      <h1 class="contact-us-title">Our Contact</h1>
+      <div class="contact-container">
+        <div class="contact">
+          <img class="phone-img" src="./asset/contact-us/phone.png" alt="phone">
+          <div>
+            <h5 class="contact-txt">Phone</h5>
+            <p class="contact-txt">+62 81234567890</p>
+          </div>
+        </div>
+        <div class="contact">
+          <img class="email-img" src="./asset/contact-us/mail.png" alt="mail">
+          <div>
+            <h5 class="contact-txt">Email</h5>
+            <p class="contact-txt">healthylife@gmail.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="newsletter-container">
+    <h1 class="contact-us-title">Receive Our Newsletter</h1>
+    <div class="form-container">
+      <form action="">
+        Email:
+        <input type="text" id="email" placeholder="Enter your email...">
+        <!-- <small class="error"></small> -->
+        <p class="small-txt">
+          By submitting this form I agree to receive daily newsletter and updated from Healthy Life
+        </p>
+        <!-- <small class="error"></small> -->
+
+        <div style="visibility: hidden;" id="err-newsletter" class="alert alert-dismissible alert-danger">
+          <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+          <strong id="err-msg-newsletter">Error</strong>
+        </div>
+  
+        <div class="button">
+            <button type="button" id="btn-newsletter" class="btn btn-outline-primary">Submit</button>
+            <p id="success"></p>
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+  <footer class="navbar navbar-expand-lg navbar-light bg-light">
+    <h3>LB11 - Faustina, Kevin, Kezia, Nicholas</h3>
+  </footer>
+</body>
+</html>
